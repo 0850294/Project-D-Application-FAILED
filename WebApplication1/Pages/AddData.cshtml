@@ -7,9 +7,52 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="DataForm" style="margin-top: 30px; margin-bottom: 30px;">
             <div class="AddDataForm" method="post">
-
+                <div class="form-group">
+                    <label asp-for="Naam" class="col-md-3">Naam:</label>
+                    <input asp-for="Naam" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Naam" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BSN" class="col-md-3">BSN:</label>
+                    <input asp-for="BSN" class="form-control" maxlength="16" />
+                    <span asp-validation-for="BSN" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Antecedent" class="col-md-3">Antecedent:</label>
+                    <input asp-for="Antecedent" class="form-control" maxlength="1024" />
+                    <span asp-validation-for="Antecedent" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Aanhoudingen" class="col-md-3">Aanhoudingen:</label>
+                    <input asp-for="Aanhoudingen" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Aanhoudingen" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Straf" class="col-md-3">Straf:</label>
+                    <input asp-for="Straf" class="form-control" maxlength="256" />
+                    <span asp-validation-for="Straf" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Uitkering" class="col-md-3">Heeft Uitkering:</label>
+                <select asp-for="Uitkering" class="form-control">
+                <option value="Ja"></option>
+                <option value="Nee"></option>
+                </select>
+                    <span asp-validation-for="Uitkering"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Traject" class="col-md-3">Loopt Traject:</label>
+                <select asp-for="Traject" class="form-control">
+                <option value="Ja"></option>
+                <option value="Nee"></option>
+                </select>
+                    <span asp-validation-for="Traject"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Akkoord" class="btn btn-primary" />
+                </div>
             </div>      
         </div>    
     </div>

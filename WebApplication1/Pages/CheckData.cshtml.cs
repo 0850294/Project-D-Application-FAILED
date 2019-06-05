@@ -8,11 +8,18 @@ namespace WebApplication1.Pages
 {
     public class CheckDataModel : PageModel
     {
-        public string Message { get; set; }
+        public string Naam { get; set; }
 
-        public void OnGet()
-        {
-            Message = "Your application description page.";
-        }
+        public string BSN { get; set; }
+
+        public string Antecedent { get; set; }
+
+        public string Aanhoudingen { get; set; }
+
+        public string Straf { get; set; }
+
+        public string Uitkering { get; set; }
+
+        public string Traject { get; set; }
     }
 }
