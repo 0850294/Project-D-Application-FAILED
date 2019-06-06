@@ -15,7 +15,8 @@ namespace WebApplication1.Pages
         public string Naam { get; set; }
 
         [Required]
-        [MaxLength(16)]
+        [MinLength(9, ErrorMessage = "BSN is te kort")]
+        [MaxLength(9, ErrorMessage ="BSN is te lang")]
         [Display(Name = "BSN")]
         public string BSN { get; set; }
 
@@ -34,14 +35,8 @@ namespace WebApplication1.Pages
         [Display(Name = "Straf")]
         public string Straf { get; set; }
 
-        [Required]
-        [MaxLength(8)]
-        [Display(Name = "Uitkering")]
         public string Uitkering { get; set; }
 
-        [Required]
-        [MaxLength(8)]
-        [Display(Name = "Traject")]
         public string Traject { get; set; }
     }
 }
