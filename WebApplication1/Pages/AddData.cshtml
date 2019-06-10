@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="DataForm" style="margin-top: 30px; margin-bottom: 30px;">
-            <div class="AddDataForm" method="post">
+            <div class="AddDataForm" method="post" asp-controller="AddBlock" asp-action="AddData">
                 <div class="form-group">
                     <label asp-for="Naam" class="Naam">Naam:</label>
                     <input asp-for="Naam" class="form-control" maxlength="256" />
